@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Add Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        * {font-family: 'Times New Roman', Times, serif; }
+
+        h1 {
+            font-weight: 500;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 2%;
+        }
+
+        #web {
+            width: 100%;
+            height: 80%;
+            margin: auto;
+            background-color: #E7EAE9;
+            position: absolute;
+        }
+
+        #Homepage {
+            margin-left: 40%;
+            text-decoration: none;
+            font-size: 18px;
+            color: black
+        }
+
+        #User {
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        .logout {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #079f76;
+            color: #ffffff;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: left;
+            margin-top: 1%;
+        }
+
+        .Add{
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #079f76;
+            color: #ffffff;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: left;
+            margin-top: 1%;
+            position: absolute;
+            margin-top: 250px;
+            margin-left: 160px;
+        }
+
+        div img {
+            position: absolute;
+            margin-left: 2%;
+            margin-top: 1%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .profile {
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: 20%;
+        }
+
+        i {
+            margin-left: 25%;
+            margin-top: 1%;
+        }
+
+        .inner {
+            background-color: #089F76;
+            width: 93%;
+            height: 80%;
+            margin-top: 2%;
+            margin-left: 3%;
+            position: absolute;
+        }
+
+        .pic {
+            width: 300px;
+            height: 300px;
+            margin-left: 5%;
+        }
+
+        .tnt {
+            color: white;
+            margin-top: 25%;
+            margin-left: 5%;
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .input {
+            width: 470px;
+            height: 300px;
+            background-color: #ffffff;
+            display: inline-block;
+            margin-left: 25%;
+            border-radius: 30px;
+        }
+
+        label {
+            color: rgb(39, 67, 10);;
+            position: absolute;
+            margin-left: 2.5%;
+        }
+
+        .label1{margin-top: 31px;}
+        .label2{margin-top: 91px;}
+        .label3{margin-top: 161px;}
+
+        input{position: absolute;
+            margin-left: 2.5%;
+            padding: 3px 10px;
+         }
+
+        #A { margin-top: 50px;}
+        #B {margin-top: 110px;}
+        #C {margin-top: 180px;}
+    </style>
+</head>
+<body>
+    <h1>Add product page</h1>
+    
+    <div id="web">
+        <img src="logo.jpg">
+            <a id="Homepage" href="#">Homepage</a>
+             <span id="User">Welcome back Username</span>
+                 <a href="#" class="logout">Logout</a>
+                     <a href="#"><img src="profile.png" alt="Profile Picture" class="profile"></a>
+                         <i class="fa-solid fa-bell"></i>
+        
+        <div class="inner">
+            <img src="image.png" class="pic">
+                <p class="tnt">Help us build a diverse and vibrant collection <br>
+                    of products on our website! Add your <br>
+                    products today and be a part of our growing <br>
+                    community. Together, we can create a <br>
+                    resource that benefits everyone</p>
+            <div class="input">
+                <i class="fa-regular fa-image" style="position: absolute; margin-top: 220px; margin-left: 30px;"> <spam style="coLor:  rgb(39, 67, 10)">Add Pictures</spam></i>
+                    <label class="label1">Name of the product </label>
+                    <input type="text" size="50" id="A">
+                        <label class="label2">Quantity</label>
+                        <input type="text" size="50" id="B">
+                            <label class="label3">Price</label>
+                                <input type="text" size="50" id="C">
+                <a href="#" class="Add">Add a product </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
