@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheet.css">
+
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <div class="heading"><img src="logo.png" alt="logo" width="70" height="70"></div>
+      <span class="sideMenuButton" onclick="openNavbar()">
+        ☰
+      </span>
+
+      <div class="navbar">
+        <ul>
+          <li><a class="login" href="#">Log in</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Side navigation bar for 
+		responsive website -->
+    <div class="sideNavigationBar" id="sideNavigationBar">
+      <a href="#" class="closeButton" onclick="closeNavbar()">
+
+      </a>
+      <a href="#">Log in</a>
+      <a href="#">Register</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+    </div>
+
+    <!-- Content -->
+    <div class="line" id="Home">
+      <div class="side1">
+        <h1>Green<br> Market Place</h1>
+        <p>
+          Welcome to MarketPlace: Your Solution to reducing Food Waste and Unlocking the Value of Unwanted Food.
+        </p>
+        <button>
+          <a href="#">
+            Contribute now
+          </a>
+        </button>
+      </div>
+      <div class="side2">
+        <img src="logo.png" alt="logo" width="400">
+      </div>
+    </div>
+    <section class="video-border"> 
+      
+      <div class="video1">
+        
+        <video src="Green Marketing.mp4" id="video11" width="800" height="450" preload="auto"  loop="loop" autoplay >
+    
+        </video>
+      </div>
+    </section>
+    <section class="ourGoal" >
+      <div class="content">
+        <div class="title">
+          <span>Our Goal</span>
+        </div>
+        <div class="goal">
+          <p>
+            The primary goal of our project is to create a web application that serves as a platform for connecting food producers (such as farm owners), individuals, restaurants, and other relevant institutions. The overarching aim is to reduce food wastage and promote the efficient utilization of surplus or unwanted food resources.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="obj" id="My Projects">
+      <div class="content">
+        <div class="title">
+          <span>Objective</span>
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <p>
+              A user-friendly web application with robust functionality enables food producers, individuals, restaurants, and institutions to easily connect and collaborate.
+            </p>
+          </div>
+          <div class="box">
+            <p>
+              Green Market Place streamlines the redistribution of surplus, expired, or spoiled food from restaurants and cooperatives. Furthermore, it benefits farmers by providing valuable resources for livestock food and fertilizer production. Join us in reducing food waste and supporting sustainability.
+            </p>
+          </div>
+
+          <div class="box">
+            <p>
+             To become a eco-friendly world
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="footer">
+        <span>
+          Created By
+          <a href="#" target="_blank">
+            Usf
+          </a>
+        </span>
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow"></i></button>
+    <script src="index.js"></script>
+  </body>
+
+</html>
