@@ -202,14 +202,28 @@
   
   /* section */
   .video1 {
+    opacity: 0.7;
     text-align: center;
-    padding-top:  10%;
-    padding-bottom:  10%;
+    padding-top:  2%;
+    padding-bottom:  2%;
     box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.075),
                 0px -10px 13px rgba(0, 0, 0, 0.075);
+                background-image: url('videobk.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                
     
   }
+  /*.video1 p{
+    font-size: 40px;
+    font-weight: bold;
+    color: #089F76;
+    
+    
+  }*/
+ 
   video {
+  
     border-radius: 30px;
     box-shadow:
     0px 10px 13px rgba(0, 0, 0, 0.075),
@@ -242,7 +256,7 @@
   }
   .ourGoal {
     background-color: rgba(174, 196, 180, 0.144);
-    padding: 13% 0%;
+    padding: 8% 0%;
   }
   .goal p {
     font-size: 22px;
