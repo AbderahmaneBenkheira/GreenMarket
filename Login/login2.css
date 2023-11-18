@@ -1,0 +1,301 @@
+*{
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-color: #E9E9E9;
+}
+
+
+ul { 
+
+    position: absolute;
+    top:10px;
+    display: flex;
+    margin-left: 40%;
+    margin-top: 20px;
+
+    list-style-type: none;
+
+   
+   
+
+
+}
+
+
+li{
+
+    margin-left: 20px;
+    margin-top: 5px;
+    
+    
+    
+  
+
+}
+#logBorder{
+    background-color: #089F76;
+    border-radius: 14px;
+    text-align: center;
+    margin-top:1px;
+  
+
+}
+
+
+
+
+
+a.log{
+
+    color: white;
+}
+
+/*a:hover{
+    border:2px solid black ;
+    border-radius: 5px;
+    padding-left: 2px;
+    background-color: #089F76;
+    text-decoration: none;
+    color: azure;
+
+
+}*/
+
+
+
+
+.listFormat{
+
+    
+
+    
+
+    border-radius: 5px;
+    width: 60px;
+    padding: 5px;
+    padding-left: 7px;
+
+    
+  
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+#avatar {
+    width: 100px;
+
+
+
+}
+
+#log_pic{
+    width: 170px;
+  
+    background-color:  white;
+   
+
+border-top-right-radius: 86px;
+border-top-left-radius: 86px;
+
+
+
+
+
+   margin-top: -18%;
+   margin-left: 32%;
+
+}
+
+#secondpart{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: none;
+    height: 1000px;
+    
+    
+    
+    /*background-image: linear-gradient(to bottom right ,green , rgb(191, 255, 0));*/
+
+
+    padding-top: 5%;
+    padding-left: 5%;
+   
+
+
+
+}
+
+#userDiv{
+    margin-left:93%;
+    position:fixed;
+   top: 28px;
+
+}
+
+#notif{
+    margin-left: 100%;
+    position:absolute;
+    top:7%;
+    left: 25px;    
+}
+
+#formDiv{
+
+
+    border: 1px black solid;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 10px;
+    background-color: white;
+
+    margin-top: 100px;
+
+    margin-left: 33%;
+
+    box-shadow: 0.5px 1px 10px black;
+}
+
+p{
+    font-size:x-large;
+
+    width:50px;
+    margin-left: 10px;
+
+}
+
+form{
+
+    margin-left: 30px;
+    
+    
+}
+
+
+.bottomMargin{
+
+
+    margin-bottom: 40px;
+    border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://cdn4.iconfinder.com/data/icons/essential-app-2/16/user-avatar-human-admin-login-512.png');
+  background-position: 5px; 
+  background-size:14px;
+  background-repeat: no-repeat;
+  background-position:99% 4px ;
+
+
+
+}
+
+#passPlace {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image:url('https://cdn3.iconfinder.com/data/icons/watchify-v1-0-32px/32/lock-512.png') ;
+
+    background-position: 99% 1px; 
+  background-size:20px;
+  background-repeat: no-repeat;
+
+}
+
+
+h1{
+    margin-top: 35px;
+    margin-left: 25%;
+    color: azure;
+    margin-bottom: 1px;
+
+    font-size:70px ;
+
+
+    width:60%;
+
+
+    text-shadow: 5px 5px 6px rgb(33, 32, 32);
+
+
+
+   
+}
+
+form div{
+    position: relative;
+    top: 40px;
+   
+
+
+    width: 73%;
+
+
+}
+
+#log{
+    position:relative;
+
+    left: 40%;
+    padding: 6px;
+    border-radius: 15px;
+    background-color: rgb(5, 134, 50);
+    color: white;
+    padding-left: 70px;
+    padding-right: 60px;
+    padding-top:4px;
+    padding-bottom:4px ;
+    margin-left: -25px;
+
+ 
+
+    font-size: 25px;
+
+    background-image: linear-gradient(to left ,rgb(5, 134, 50) , rgb(89, 255, 0)) ;
+
+  
+
+}
+
+
+#b1{
+    margin-top: 15px;
+    margin-left: 135px;
+    border-radius: 10px;
+}
+
+#ForgotDiv{
+
+    margin-top: 20px;
+margin-left: 150px;
+
+
+}
+
+#forgot{
+
+    color: gray;
+
+    font-size: larger;
+}
+
+
+
+
+#imgDiv{
+    margin-bottom: 30px;
+    width: 50px;
+    height: 40px;
+    margin-top: 1px;
+}
