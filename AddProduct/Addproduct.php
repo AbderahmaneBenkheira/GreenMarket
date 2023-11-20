@@ -10,6 +10,7 @@ $productName = isset($_GET["productname"]) ? $_GET["productname"] : "";
 $productQty = isset($_GET["qty"]) ? $_GET["qty"] : "";
 $productPrice = isset($_GET["productPrice"]) ? $_GET["productPrice"] : "";
 
+
 if (isset($_GET["submit"])) {
     // Use $userName in your query to associate the product with the logged-in user
     $query = "INSERT INTO products (ProductName, ProductQuantity, ProductPrice, ProductProvider) VALUES ('$productName', '$productQty', '$productPrice', '$userName')";
@@ -41,7 +42,7 @@ mysqli_close($conn);
           <ul>
             <li><a class="login" href="#">Hello <?=$_SESSION["username"]?></a></li>
             <li><a href="logout.php">Log out</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="../ProductPage/productPage.php">Products</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
           </ul>

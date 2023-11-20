@@ -1,8 +1,25 @@
 <?php
 session_start();
+$conn = mysqli_connect('localhost', 'root', '', 'greenmarket');
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+// Retrieve products from the database
+$query = "SELECT * FROM products";
+$result = mysqli_query($conn, $query);
+
+// Fetch the products and store them in an array
+
+$products = [];
+while ($row = mysqli_fetch_assoc($result)) {
+    $products[] = $row;
+}
+
+mysqli_close($conn);
 ?>
-
-
 
 <!DOCTYPE html>
 <html>
@@ -22,6 +39,7 @@ session_start();
 
 </head>
 
+
 <body>
     <div class="navBar1">
         <div class="logo">
@@ -39,8 +57,6 @@ session_start();
                 <i class="fa-solid fa-bell" style="color: #0d0d0d;"></i>
             </div>
         </div>
-
-
     </div>
 
     <div class="body">
@@ -53,12 +69,48 @@ session_start();
                     <li><button>List by quantity</button></li>
                     <li><button>List by price</button></li>
                     <li><button>Select category</button></li>
-                    <li><button>Add products</button></li>
+                    <a href="../AddProduct/Addproduct.php"><li><button>Add products</button></li></a>
                 </ul>
             </div>
         </div>
+
+        <?php
+        $productCount = count($products);
+        for ($i = 0; $i < $productCount; $i += 2) {
+            echo "<div class='column'>";
+            
+            // Display the left product
+            echo "<div class='left_product'>" .
+                "<div class='pImage'><img src='productPhotos/bread.jpg'></div>" .
+                "<div class='product_info'>" .
+                "<div class='pName'>Product Name: " . $products[$i]['ProductName'] . "</div>" .
+                "<div class='pProviderName'>Provider Name: " . $products[$i]['ProductProvider'] . "</div>" .
+                "<div class='pQuantity'>Product Quantity: " . $products[$i]['ProductQuantity'] . " KG</div>" .
+                "<div class='pPrice'>Product Price: " . $products[$i]['ProductPrice'] . " AED</div>" .
+                "<div class='buttons'><button>Request</button><button>Add to list</button>" .
+                "</div>" .
+                "</div>" .
+                "</div>";
+
+            // Display the right product if it exists
+            if ($i + 1 < $productCount) {
+                echo "<div class='right_product'>" .
+                    "<div class='pImage'><img src='productPhotos/bread.jpg'></div>" .
+                    "<div class='product_info'>" .
+                    "<div class='pName'>Product Name: " . $products[$i + 1]['ProductName'] . "</div>" .
+                    "<div class='pProviderName'>Provider Name: " . $products[$i + 1]['ProductProvider'] . "</div>" .
+                    "<div class='pQuantity'>Product Quantity: " . $products[$i + 1]['ProductQuantity'] . " KG</div>" .
+                    "<div class='pPrice'>Product Price: " . $products[$i + 1]['ProductPrice'] . " AED</div>" .
+                    "<div class='buttons'><button>Request</button><button>Add to list</button>" .
+                    "</div>" .
+                    "</div>" .
+                    "</div>";
+            }
+
+            echo "</div>";
+        }
+        ?>
     </div>
-    <script src="productPageScript.js"></script>
 </body>
 
 </html>

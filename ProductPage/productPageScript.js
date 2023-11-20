@@ -1,4 +1,5 @@
 
+
 var productImage = ["productPhotos/Beans.WEBP", "productPhotos/Fishes.jpg", "productPhotos/bread.jpg", "productPhotos/lettuce.AVIF",
     "productPhotos/lentils.jpg", "productPhotos/potatoes.jpg"];
 var productName = ["Beans", "Fishes", "baked goods", "lettuce", "lentils", "potatoes"];
