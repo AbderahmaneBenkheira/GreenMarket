@@ -220,21 +220,74 @@
             color: white;
             box-shadow: 0.5px 1px 5px black;
         }
+
+        nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color:  #E9E9E9;
+  }
+  
+ .heading img {
+     float: left;
+     margin-top: -20px;
+     margin-left: -15px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    padding: 8px 15px;
+    border-radius: 22px;
+    transition: 0.2s ease-in;
+  }
+  
+  nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+  .login{
+    background-color: #089F76;
+    color: white;
+    padding: 8px 17px;
+    border-radius: 22px;
+  }
+  
+  nav ul li:hover {
+    background-color: #089F76;
+  }
+  
+  nav ul li a:hover {
+    color: white;
+  }
     </style>
 </head>
 
 <body>
-    <div class="topnav">
-        <img src="logo.jpeg" alt="logo" class="logo">
-        <a id="reg">Register</a>
-        <a href="#">Log in</a>
-        <a href="#">Home Page</a>
+   <nav>
+    <div class="heading"><img src="logo.png " alt="logo" width="70" height="70"></div>
+    <div class="navbar">
+      <ul>
+      <li><a class="login" href="../Landing_Page/">Log in</a></li>
+      <li><a href="../SignUp/GreenMarketSignUp.php">Register</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
     </div>
-    <div class="title-photo">
-        <img src="GreenPhoto.jpg" alt="photo">
+  </nav>  
+  <div class="title-photo">
+    <img src="GreenPhoto.jpg" alt="photo">
 
 
-    </div>
+</div>
     <div class="title-content">
         <p>Join our website dedicated to recycling unwanted food and be part of
             our mission to reduce food waste and create a more sustainable future. Create an account

@@ -7,6 +7,56 @@ body {
 }
 
 
+nav {
+    overflow: hidden;
+    background-color: #f6f5f5;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0.5px 1px 5px black;
+  }
+  
+ .heading img {
+     float: left;
+     margin-top: -20px;
+     margin-left: -15px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    padding: 8px 15px;
+    border-radius: 22px;
+    transition: 0.2s ease-in;
+  }
+  
+  nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+  .login{
+    background-color: #089F76;
+    color: white;
+    padding: 8px 17px;
+    border-radius: 22px;
+  }
+  
+  nav ul li:hover {
+    background-color: #089F76;
+  }
+  
+  nav ul li a:hover {
+    color: white;
+  }
+
+
 ul { 
 
     position: absolute;
@@ -299,3 +349,5 @@ margin-left: 150px;
     height: 40px;
     margin-top: 1px;
 }
+
+
