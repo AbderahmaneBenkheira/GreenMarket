@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Addproduct.css">
-<<<<<<< HEAD
-    <script>
 
-      var help;
+    <script>
+      var help
 
       function ini()
       {
         help = document.getElementById("helper");
-
-        Rl(document.getElementById("pr")," Write the Name of the Producted \n Which Start with Upper-Case");
-        Rl(document.getElementById("qty")," Write the Quantity of the product which should be more than 3 Kg");
-        Rl(document.getElementById("price")," Write the price of the product which should be in the range of [0-100]");
-
+        var pr = document.getElementById("pr");
+        var qty = document.getElementById("qty");
+        var price = document.getElementById("price");
         var Myform = document.getElementById("Myform");
-        
-        Myform.addEventListener("submit",function(){return " Are you Sure you want to submit?"; },false);
-        Myform.addEventListener("reset",function(){return " Are you Sure you want to reset?";},false);
 
+        Rl(pr," Write the Name of the Producted \n Which Start with Upper-Case");
+        Rl(qty," Write the Quantity of the product which should be more than 3 Kg");
+        Rl(price," Write the price of the product which should be in the range of [0-100]");
+
+        Myform.addEventListener("submit",function(){return confirm(" Are you Sure you want to submit?"); },false);
       }
     
       function Rl(obj,message)
@@ -35,11 +34,9 @@
 
     window.addEventListener("load",ini,false);
    </script>
-=======
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
->>>>>>> b2c8c0d430f1f95b4bd4eadf1fe968ecca804279
 </head>
 <body>
     
@@ -62,7 +59,7 @@
        </div>
       <div class="input">
         <form action="" id = "Myform">
-          <p style="font-size:30px">Add a product</p>
+          <p id = "add" style="font-size:30px; ">Add a product</p>
             <input type="text" name="productname" id="pr" placeholder="Name of the product">
             
             <input type="text" name="qty" id="qty" placeholder="Quantity">
@@ -73,7 +70,7 @@
             <p>Add pictures</p>
           </div>
           
-            <input type="submit" class="btn">
+            <input type="submit" class="btn" id = "submit">
 
         </form>
       </div>
