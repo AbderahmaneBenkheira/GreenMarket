@@ -110,7 +110,6 @@ input{
 .icon{
   width: 30px;
   height: 40px;
-  colo
 }
 
 .icc{
@@ -124,4 +123,18 @@ align-items: center;
 
 .icc p{
   color: #a09393;
+}
+
+#helper{
+  position: absolute;
+ margin-left: 63%;
+ margin-top: 45%;
+ 
+ border-radius: 4px;
+ width: 200px;
+ text-align: center;
+ border: #FFFFFF, 2px, double;
+ background-color: white;
+ box-shadow: wheat 7px 5px;
+ 
 }
