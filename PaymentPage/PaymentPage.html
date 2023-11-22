@@ -146,6 +146,32 @@
         document.querySelector('.cvv').oninput= function(){
             document.querySelector('.cvv-box').innerText= document.querySelector('.cvv').value;
         }
+
+
+        //add the dashes"-" between each 4 numbers
+        
+        var cardNumInput = document.querySelector('.cardNum-Input');
+
+        cardNumInput.addEventListener('input', function () {
+            // update the card number info
+            var formattedCardNumber = AddLines(cardNumInput.value);
+            document.querySelector('.cardnum-info').innerText = formattedCardNumber;
+        });
+    
+        
+        function AddLines(CN) {
+    
+            var formattedCardNumber = '';
+            for (var i = 0; i < CN.length; i++) {
+                
+                if (i % 4 === 0 && i>0) {
+                    formattedCardNumber += '-';
+                }
+                formattedCardNumber += CN[i];
+            }
+    
+            return formattedCardNumber;
+        }
     </script>
 
 </body>

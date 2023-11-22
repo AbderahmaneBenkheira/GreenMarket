@@ -84,7 +84,6 @@
     left: 0;
     background: linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);
     border-radius: 5px;
-    backface-visibility: hidden;
     box-shadow: 0 15px 25px rgba(0,0,0,0.2);
     padding: 20px;
     transform:perspective(1000px) rotateY(0deg);
