@@ -63,7 +63,6 @@ body {
 
 section {
   display: flex;
-  justify-content: space-between;
   width: 90%;
   margin: auto;
   align-items: center;
@@ -93,7 +92,7 @@ input {
 
 }
 
-.text {
+.LeftText {
   width: 50%;
   margin-top: 15px;
   color: #FFFFFF;
@@ -101,7 +100,7 @@ input {
   font-size: 20px;
 }
 
-.btn {
+.SubmitBtn {
   width: 300px;
   color: white;
   background-color: #089F76;
@@ -109,25 +108,25 @@ input {
   border-radius: 20px;
 }
 
-.btn:hover{
+.SubmitBtn:hover{
   transition: 0.2s ease-in;
   width: 350px;
   border-radius: 25px;
 }
 
-.icon {
+.AddPictures {
   width: 30px;
   height: 40px;
 }
 
-.icc {
+.icon {
   width: 77%;
   margin-top: 15px;
   display: flex;
   align-items: center;
 }
 
-.icc p {
+.icon p {
   color: #a09393;
 }
 
