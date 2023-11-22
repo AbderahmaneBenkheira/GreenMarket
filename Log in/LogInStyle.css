@@ -24,6 +24,8 @@ nav {
     justify-content: space-between;
     padding: 20px 4%;
     background-color: #E9E9E9;
+    /*background: transparent;
+    backdrop-filter: blur(100px);*/
     position: fixed;
     top: 0;
     z-index: 1000;
