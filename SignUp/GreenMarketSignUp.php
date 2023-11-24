@@ -104,246 +104,180 @@ if(isset($_GET["submit"]))
 <html lang="en">
 
 <head>
-    <title>TestRegistrationPage</title>
+    <title>Registeration Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <style>
-     * {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-.content {
-    max-width: 700px;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0.5px 1px 10px black;
-    padding: 25px 30px;
-    border-radius: 20px;
-    margin-top: 10%;
-    margin-left: 50%;
+        .content {
+            max-width: 700px;
+            width: 100%;
+            background-color:rgba(255, 255, 255,0.7);
+            backdrop-filter: blur(100px);
+            box-shadow: 0.5px 1px 10px black;
+            padding: 25px 30px;
+            border-radius: 20px;
+            margin-top: 10%;
+            margin-left: 50%;
 
-}
+        }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            min-width: 150vh;
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
 
-.sign-up-title {
-    font-size: 25px;
-    font-weight: 200;
-    position: relative;
-}
+        .sign-up-title {
+            font-size: 25px;
+            font-weight: 200;
+            position: relative;
+        }
 
-.content .sign-up-title::before {
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 30px;
-    background: #089F76;
-    left: 0;
-    top: 35px;
+        .content .sign-up-title::before {
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 30px;
+            background: #089F76;
+            left: 0;
+            top: 35px;
 
-}
+        }
 
-.content form .user-details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 30px 0 12px 0;
+        .content form .user-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 0 12px 0;
 
-}
+        }
 
-form .user-details .input-box {
+        form .user-details .input-box {
 
-    width: calc(100% / 2 - 20px);
+            width: calc(100% / 2 - 20px);
 
-    margin-bottom: 15px;
-
-
-}
-
-/*input*/
-form .user-details .input-box input {
-    outline: none;
-    height: 45px;
-    width: 100%;
-    border-radius: 5px;
-    border: 1.5px #ccc solid;
-    font-size: 16px;
-    padding-left: 15px;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-
-}
-
-/* when you click on the input*/
-form .user-details .input-box input:focus,
-form .user-details .input-box input:valid {
-    border-color: yellowgreen;
-
-}
-
-.user-details .input-box .info {
-    display: block;
-    font-weight: 500;
+            margin-bottom: 15px;
 
 
-}
+        }
 
-/*create an account button*/
-form .Create-Button input {
-    height: 100%;
-    width: 50%;
-    outline: none;
-    background-color: #089F76;
-    border: none;
-    font-size: 18px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    border-radius: 10px;
-    margin-left: 25%;
-    color: white;
-    cursor: pointer;
+        /*input*/
+        form .user-details .input-box input {
+            outline: none;
+            height: 45px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1.5px #ccc solid;
+            font-size: 16px;
+            padding-left: 15px;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+
+        }
+
+        /* when you click on the input*/
+        form .user-details .input-box input:focus,
+        form .user-details .input-box input:valid {
+            border-color: yellowgreen;
+
+        }
+
+        .user-details .input-box .info {
+            display: block;
+            font-weight: 500;
 
 
+        }
 
-}
-
-form .Create-Button {
-    height: 45px;
-
-
-}
+        /*create an account button*/
+        form .Create-Button input {
+            height: 100%;
+            width: 50%;
+            outline: none;
+            background-color: #089F76;
+            border: none;
+            font-size: 18px;
+            font-weight: 200;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            margin-left: 25%;
+            color: white;
 
 
 
-form .UAE-Pass-Button a .UaePassP {
-    height: 50%;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+        }
+
+        form .Create-Button {
+            height: 45px;
+
+
+        }
 
 
 
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: #f6f5f5;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0.5px 1px 5px black;
-}
-
-.topnav a {
-    margin-top: 10px;
-    float: right;
-    display: block;
-    color: #0c0c0c;
-    text-align: center;
-    padding: 14px 25px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.topnav a:not(#reg):hover {
-    background-color: #089F76;
-    color: rgb(245, 245, 245);
-    border-radius: 30px;
-    box-shadow: 0.5px 1px 5px black;
-
-}
-
-.logo {
-    float: left;
-    margin-right: 15px;
-    width: 70px;
-}
-
-.title-content {
-    width: 40%;
-    position: absolute;
-    margin-top: 36%;
-    margin-right: 43%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: aliceblue;
-    padding-left: 4px;
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
-    background-attachment: fixed;
+        form .UAE-Pass-Button a .UaePassP {
+            height: 50%;
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
 
 
-}
 
-.title-content p {
-    text-align: justify;
-    font-size: 25px;
+        }
 
-}
+        
 
-.title-photo {
-    width: 50%;
-    position: absolute;
-    margin-top: 5%;
-    margin-right: 20%;
-    height: 30px;
-
-}
-
-.title-photo img {
-    width: 500px;
-    height: 500px;
-    background-attachment: fixed;
-    opacity: 0.3;
-    border-radius: 30px;
-
-}
-
-#reg {
-    background-color: #089F76;
-    border-radius: 30px;
-    color: white;
-    box-shadow: 0.5px 1px 5px black;
-}
+        .title-content {
+            min-width: 20vh;
+            width: 40%;
+           position: absolute;
+            margin-top: 36%;
+            margin-right: 43%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: aliceblue;
+            padding-left: 4px;
+            background: transparent;
+            backdrop-filter: blur(120px);
+            border-radius: 20px;
+            background-attachment: fixed;
 
 
-.error{
-    color:red;
-}
+        }
 
-.error-message{
-    color:red;
-    display: flex;
-    justify-content:center;
+        .title-content p {
+            text-align: justify;
+            font-size: 25px;
 
+        }
+        #reg {
+            background-color: #089F76;
+            border-radius: 30px;
+            color: white;
+            box-shadow: 0.5px 1px 5px black;
+        }
 
-}
-
-.successfullmsg{
-    color:green;
-    display:flex;
-
-}
-
-nav {
+        nav {
     width: 100%;
     height: 80px;
     display: flex;
@@ -353,7 +287,7 @@ nav {
   }
   
  .heading img {
-     float: left;
+    
      margin-top: -20px;
      margin-left: -15px;
   }
@@ -391,86 +325,80 @@ nav {
     color: white;
   }
 
-
+  .error {
+        color: red;
+    }
     </style>
 </head>
 
 <body>
-<nav>
-        <div class="heading"><img src="logo.png " alt="logo" width="70" height="70"></div>
-        <div class="navbar">
-          <ul>
-          <ul>
-          <li><a class="login" href="../Login/login2.php">Log in</a></li>
-          <li><a href="../SignUp/GreenMarketSignUp.php">Register</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="#">Services</a></li>
-        </ul>
-          </ul>
-        </div>
-      </nav>  
-      <div class="title-photo">
-        <img src="GreenPhoto.jpg" alt="photo">
-
-
+   <nav>
+   <a href="../Landing_Page/Landingpage.html"> <div class="heading"><img src="logo.png " alt="logo" width="70" height="70"></div></a>
+    <div class="navbar">
+      <ul>
+      <li><a class="login" href="../Login/Login.php">Log in</a></li>
+      <li><a href="../SignUp/GreenMarketSignUp.php">Register</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
     </div>
-      
+  </nav>  
+  
     <div class="title-content">
-    <p>Join our website dedicated to recycling unwanted food and be part of
+        <p>Join our website dedicated to recycling unwanted food and be part of
             our mission to reduce food waste and create a more sustainable future. Create an account
             today and make a positive impact</p>
+
     </div>
+
 
     <div class="content">
+    <div class="sign-up-title">Sign Up</div>
+    <form action="#" method="get">
+        <div class="user-details">
+            <div class="input-box">
+                <span class="info">First Name <span class="error"><?php echo $fnerror; ?></span></span>
+                <input type="text" name="fn" placeholder="Enter Your First Name" value="<?php echo $FirstName; ?>">
+            </div>
+            <div class="input-box">
+                <span class="info">Last Name <span class="error"><?php echo $lnerror; ?></span></span> 
+                <input type="text" name="ln" placeholder="Enter Your Last Name" value="<?php echo $LastName; ?>">
+            </div>
+            <div class="input-box">
+                <span class="info">Email <span class="error"><?php echo $emerror; ?></span></span>
+                <input type="text" name="em" placeholder="Enter Your Email" value="<?php echo $Email; ?>">
+            </div>
+            <div class="input-box">
+                <span class="info">Username <span class="error"><?php echo $unerror; ?></span></span>
+                <input type="text" name="us" placeholder="Enter Your Username" value="<?php echo $UserName; ?>">
+            </div>
+            <div class="input-box">
+                <span class="info">Password <span class="error"><?php echo $pwerror; ?></span></span>
+                <input type="password" name="pw" placeholder="Enter Your Password">
+                
+            </div>
+            <div class="input-box">
+                <span class="info">Phone Number <span class="error"><?php echo $pnerror; ?></span></span>
+                <input type="text" name="pn" placeholder="Enter Your Phone Number" value="<?php echo $PhoneNumber; ?>">
+               
+            </div>
+        </div>
+        <div class="Create-Button">
+            <input type="submit" name="submit" value="Create An Account">
+        </div>
+        <div class="UAE-Pass-Button">
+            <a class="UaePass" href="https://uaepass.ae/">
+                <img class="UaePassP" src="uae-pass.png" alt="signup by uae pass">
+            </a>
+        </div>
+        <p class="error"><?php echo $errormsg; ?></p>
+        <p style="color: green;"><?php echo $successfulmsg; ?></p>
+    </form>
+</div>
 
-        <div class="sign-up-title">Sign Up</div>
-        <div class="error-message"><?= $errormsg ?></div>
 
-        <form action="#">
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="info">First Name  <span  class="error"><?= $fnerror ?></span></span>
-                    <input type="text" placeholder="Enter Your First Name" name="fn" >
-                  
-                </div>
-                <div class="input-box">
-                    <span class="info">Last Name                     <span class="error"><?= $lnerror ?></span>
- </span>
-                    <input type="text" placeholder="Enter Your Last Name" name="ln" >
-                </div>
-                <div class="input-box">
-                    <span class="info">Email                     <span class="error"><?= $emerror ?></span>
-</span>
-                    <input type="text" placeholder="Enter Your Email" name="em" >
-                </div>
-                <div class="input-box">
-                    <span class="info">Username                     <span class="error"><?= $unerror ?></span>
- </span>
-                    <input type="text" placeholder="Enter Your Username" name="us" >
-                </div>
-                <div class="input-box">
-                    <span class="info">Password                    <span class="error"><?= $pwerror ?></span>
-</span>
-                    <input type="password" placeholder="Enter Your Password" name="pw" >
-                </div>
-                <div class="input-box">
-                    <span class="info">Phone Number                    <span class="error"><?= $pnerror ?></span>
-</span>
-                    <input type="text" placeholder="Enter Your Phone Number" name="pn" >
-                </div>
-            </div>
-            <div class="Create-Button">
-                <input type="submit" value="Create An Account" name="submit"> 
-            </div>
-            <div class="UAE-Pass-Button">
-                <a class="UaePass" href="https://uaepass.ae/">
-                    <img class="UaePassP" src="uae-pass.png" alt="signup by uae pass">
-                </a>
-            </div>
-            <!-- Display the error message -->
-            <div class="successfullmsg"><?=$successfulmsg?></div>
-        </form>
-    </div>
+
+
 </body>
 
 </html>
